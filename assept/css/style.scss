@@ -1,0 +1,266 @@
+$base_color:#3A5F56;
+$second_color:#292C32;
+@font-face {
+    font-family: Roboto;
+    src: url(../Fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.btn{
+    color: #FFF;
+    background-color: #3A5F56;
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+.header{
+    &_wrap{
+        display: flex;
+        justify-content: space-between;
+        padding:  20px 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__link{
+        color: #3A5F56;
+        font-size: 16px;
+
+        &:hover{
+            color: aqua;
+        }
+    }
+    &__item{
+        margin-right: 30px;
+    }
+    &__cart{
+        display: flex;
+        gap: 8px;
+        &::before{
+            content: "";
+            background: url(../img/Frame\ \(3\).svg);
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        &::after{
+            content: "0";
+            color: $base_color;
+            background-color: #FFF;
+            padding: 0 6px;
+            border-radius:50% ;
+        }
+    }
+}
+.main{
+    background:url(../img/Fon.svg) no-repeat center center / cover ; 
+    padding: 100px 0;
+    &__wrap{
+        display: flex;
+        gap: 64px;
+    }
+    &__title{
+        color: $base_color;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 27px;
+    }
+}
+.services{
+    padding: 100px 0;
+    &__title{
+        color: $base_color;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+
+    &__zip{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    
+    &__textt{
+        color: $second_color;
+        font-size: 16px;
+        margin: 0 auto;
+        max-width: 590px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    &__text{
+        color: $second_color;
+        font-size: 16px
+        margin 0 auto;
+        max-width: 590px;
+        margin-bottom: 17px;
+        
+    }
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    } 
+    &__card{
+        max-width: 378px;
+        border-radius: 16px;
+        background-color: #a7a2a2;
+        padding: 30px;
+    }
+    &__icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 9px;
+    } 
+    &__sub-title{
+        color: $base_color;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }    
+}
+.store{
+    background: url(../img/Fon2.png)no-repeat center center / cover ;
+    padding: 100px 0;
+    &__wrapper{
+        text-align: center;
+    }
+    &__title{
+        color: #DB343B;
+        font-size: 32px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    &__sub-title{
+        font-size: $second_color;
+        font-size: 16px;
+        margin :0 auto;
+        max-width: 591px;
+        max-height:68px ;
+    }
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        gap: 16px;
+    }
+    &__card{
+        max-width: 438px;
+        background-color: #FFF;
+        color: $base_color;
+        text-align: center;
+        
+    }
+    &__text{
+        color: $base_color;
+        margin-bottom: 20px;
+    }
+
+}
+.link{
+    padding: 70px;
+    margin-left: 230px;
+    margin-top: 100px;
+    &__wrapper{
+        background-color: #F4F3F0;
+        display: flex;
+        width: 800px;
+        height: 259px;
+        justify-content: space-between;
+    }
+    &__text{
+        font-size: 28px;
+        color: $second_color;
+        max-width: 313px;
+        max-height:101px ;
+        margin-top: 77px;
+        margin-left: 100px;
+    }
+    &__button{
+        
+        color: #FFF;
+        background-color: #3A5F56;
+        border-radius: 6px;
+        padding: 10px 18px;
+        max-height: 40px;
+        display: flex;
+        margin: auto 0;
+        margin-right: 80px;
+        
+    }
+}
+.podval{
+    max-height:  779px;
+    text-align: center;
+    padding: 100px 0 ;
+    height: 779px;
+    background-color: #292C32;
+    &__list{
+       margin-top: 40px;
+    }
+    &__wrapper{
+        gap: 70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__pages{
+        
+        max-width: 220px;
+        color: #FFF;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 40px;
+        
+    }
+    &__title{
+        font-size: 14px;
+        color: #B87D58;
+        justify-content: space-between;
+    }
+    &____Home-btn{
+        font-size: 16px;
+               
+        
+    }
+    &__email{
+    display: block;
+    width: 440px;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 458px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    order: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    }
+    &__bottom-text{
+        color: #FFF;
+    }
+
+}
